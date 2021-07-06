@@ -1,0 +1,45 @@
+{
+  "name": "arvis-iconfinder-search",
+  "version": "0.0.2",
+  "description": "Iconfinder Instant Search workflow",
+  "license": "MIT",
+  "author": {
+    "name": "Rawnly",
+    "email": "fedevitale99@gmail.com",
+    "url": "rawnly.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo",
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "arvis-workflow.json",
+    "assets/bug.png",
+    "assets/web.png",
+    "assets/thumbs",
+    "thumbs/empty"
+  ],
+  "keywords": [
+    "arvis",
+    "workflow",
+    "arvish",
+    "iconfinder",
+    "search",
+    "icons",
+    "icon",
+    "tool",
+    "arvis-workflow"
+  ],
+  "dependencies": {
+    "arvish": ">=0.4.6"
+  },
+  "devDependencies": {
+    "xo": "^0.17.0"
+  }
+}

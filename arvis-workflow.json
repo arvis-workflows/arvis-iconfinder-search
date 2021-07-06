@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "category": "Productivity",
+  "creator": "Rawnly",
+  "description": "",
+  "name": "arvis-iconfinder-search",
+  "readme": "",
+  "defaultIcon": "icon.png",
+  "version": "0.0.2",
+  "webAddress": "https://github.com/jopemachine/arvis-iconfinder-search",
+  "enabled": true,
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "command": "ico",
+      "title": "Search icons...",
+      "subtitle": "",
+      "scriptFilter": "node index.js \"{query}\"",
+      "runningSubtext": "",
+      "withspace": true,
+      "argType": "required",
+      "actions": [
+        {
+          "modifiers": "normal",
+          "type": "open",
+          "target": "{query}"
+        }
+      ]
+    }
+  ]
+}
